@@ -7,8 +7,8 @@ init:
   - cmd: git config --global core.autocrlf true
 before_build:
   - cmd: dotnet --version
-  - cmd: dotnet restore ./SampleLinearSearch/SampleLinearSearch.csproj --verbosity m
+  - cmd: dotnet restore ./SimpleWebApiTests/SimpleWebApiTests.csproj --verbosity m
 build_script:
-  - cmd: dotnet publish ./SampleLinearSearch/SampleLinearSearch.csproj
+  - cmd: dotnet publish ./SimpleWebApiTests/SimpleWebApiTests.csproj
 clone_depth: 1
 deploy: off
